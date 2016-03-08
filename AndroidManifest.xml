@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.term_project"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="8" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.example.term_project.Splash"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.term_project.IntroScreen"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.example.term_project.INTROSCREEN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.term_project.ShiftCipher"
+            android:label="@string/title_activity_shift_cipher" >
+        </activity>
+        <activity
+            android:name="com.example.term_project.TranspositionCipher"
+            android:label="@string/title_activity_transposition_cipher" >
+        </activity>
+        <activity
+            android:name="com.example.term_project.About"
+            android:label="@string/title_activity_about" >
+        </activity>
+        <activity
+            android:name="com.example.term_project.TripleH"
+            android:label="@string/title_activity_triple_h" >
+        </activity>
+        <activity
+            android:name="com.example.term_project.News"
+            android:label="@string/title_activity_news" >
+        </activity>
+        <activity
+            android:name="com.example.term_project.Shift_Encrypt"
+            android:label="@string/title_activity_shift__encrypt" >
+        </activity>
+        <activity
+            android:name="com.example.term_project.Transposition_Cipher"
+            android:label="@string/title_activity_transposition__cipher" >
+        </activity>
+        <activity
+            android:name="com.example.term_project.Vigenere_Cipher"
+            android:label="@string/title_activity_vigenere__cipher" >
+        </activity>
+        <activity
+            android:name="com.example.term_project.SendSms"
+            android:label="@string/title_activity_send_sms" >
+        </activity>
+        <activity
+            android:name="com.example.term_project.SmsTrans"
+            android:label="@string/title_activity_sms_trans" >
+        </activity>
+    </application>
+
+</manifest>
